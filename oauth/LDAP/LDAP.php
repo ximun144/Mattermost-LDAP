@@ -37,6 +37,7 @@ class LDAP implements LDAPInterface
             throw new InvalidArgumentException('Second argument to LDAP must be the ldap server port (int). Ex : 389');
         }
 
+        ldap_set_option(NULL, LDAP_OPT_DEBUG_LEVEL, 7);
         $ldap = ldap_connect($ldap_host, $ldap_port)
             or die("Unable to connect to the ldap server : $ldaphost ! Please check your configuration.");
 
