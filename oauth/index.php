@@ -41,10 +41,10 @@ else
      {
         messageShow($prompt_template, 'Username has incorrect format ... Please try again');
     }
-    elseif (strlen($_POST['password']) > 64 || strlen($_POST['password']) <= 7)
-    {
-        messageShow($prompt_template, 'Password has incorrect format ... Please try again');
-    }
+    // elseif (strlen($_POST['password']) > 64 || strlen($_POST['password']) <= 7)
+    // {
+    //     messageShow($prompt_template, 'Password has incorrect format ... Please try again');
+    // }
     else
        {
            // Remove every html tag and useless space on username (to prevent XSS)
